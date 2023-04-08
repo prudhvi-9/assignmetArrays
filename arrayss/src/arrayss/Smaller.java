@@ -2,7 +2,7 @@ package arrayss;
 
 import java.util.Scanner;
 
-public class LargestNumber {
+public class Smaller {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,15 +16,17 @@ public class LargestNumber {
 
 			sud[i] = cs.nextInt();
 		}
-		int max = sud[0];
+
+		int min = sud[0];
 
 		for (int i = 0; i < sud.length; i++) {
 
-			if (sud[i] > max)
-				max = sud[i];
+			if (sud[i] < min)
+				min = sud[i];
 		}
-		System.out.println("Largest element present in given array: " + max);
-		cs.close();
-	}
+		System.out.println("Smallest element present in given array: " + min);
 
+		cs.close();
+
+	}
 }
